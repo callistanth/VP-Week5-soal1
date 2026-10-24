@@ -47,6 +47,8 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
 
+
+
 @Composable
 fun ExpenseScreen (
     viewModel: ExpenseViewModel = viewModel()
@@ -62,6 +64,9 @@ fun ExpenseScreen (
         onDeleteExpense = viewModel::onDeleteExpense
     )
 }
+
+
+
 
 @Composable
 fun ExpenseContent(
@@ -165,6 +170,8 @@ fun ExpenseContent(
 }
 
 
+
+
 @Composable
 fun ExpenseItem(
     expense: Expense,
@@ -216,6 +223,8 @@ fun ExpenseItem(
         }
     }
 }
+
+
 
 
 @Preview(showSystemUi = true, showBackground = true)
